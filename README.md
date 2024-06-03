@@ -1,109 +1,114 @@
-Material Finder
-- Overview
-Material Finder is a full-stack application that allows users to find suitable materials for different objects based on specified properties such as transparency, density, and stiffness. The application consists of a backend implemented with Flask and a frontend built with React.
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+</p>
 
-Features
-Backend API to manage materials and objects
-Retrieve materials that satisfy certain parameters
-Frontend GUI to interact with the backend
-List of objects and their material requirements
-Display suitable materials for a selected object
+<h3 align="center">undefined</h3>
 
-- Technologies Used
-Backend: Flask, PyMySQL
-Frontend: React, Axios
-Database: MySQL
-Other: MAMP for local MySQL server management
+<div align="center">
 
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-Setup and Installation
-Prerequisites
+</div>
 
-Python 3.x
-Node.js and npm
-MAMP (or any local MySQL server)
-Backend Setup
+---
 
-python -m venv venv
-source venv/bin/activate  
+<p align="center"> Few lines describing your project.
+    <br> 
+</p>
 
-Install the dependencies:
+## 📝 Table of Contents
 
-pip install -r requirements.txt
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
 
-Configure the database:
+## 🧐 About <a name = "about"></a>
 
-Ensure MAMP is running and MySQL server is started. Update app.py with your database credentials if necessary.
+Write about 1-2 paragraphs describing the purpose of your project.
 
-Initialize the database:
+## 🏁 Getting Started <a name = "getting_started"></a>
 
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-Run the Flask server:
+### Prerequisites
 
-python3 run.py
+What things you need to install the software and how to install them.
 
-Frontend Setup
-Navigate to the frontend directory:
+```
+Give examples
+```
 
-cd ../frontend
-Install the dependencies:
+### Installing
 
-npm install
+A step by step series of examples that tell you how to get a development env running.
 
-Start the React development server:
+Say what the step will be
 
-npm start
+```
+Give the example
+```
 
-Database Initialization
-Populate the database:
+And repeat
 
-Use a MySQL client or command-line tool to insert the provided data into the Materials and Objects tables.
+```
+until finished
+```
 
-sql
-INSERT INTO Materials (name, transparency, density, stiffness) VALUES
-('Wood', 0.10, 0.60, 1.00),
-('Metal', 0.00, 7.80, 8.00),
-('Plastic', 0.50, 0.95, 0.80),
-('Glass', 0.90, 2.50, 5.00),
-('Ceramic', 0.00, 2.20, 7.00),
-('Rubber', 0.05, 1.20, 0.50),
-('Concrete', 0.00, 2.40, 6.00),
-('Fiber', 0.60, 1.00, 3.00),
-('Carbon Fiber', 0.00, 1.60, 7.50),
-('Steel', 0.00, 7.85, 9.00);
+End with an example of getting some data out of the system or using it for a little demo.
 
-INSERT INTO Objects (name, min_transparency, max_density, min_stiffness) VALUES
-('Chair', 0.00, 2.00, 1.00),
-('Window', 0.70, 3.00, 3.00),
-('Bottle', 0.00, 1.50, 1.00),
-('Table', 0.00, 2.50, 5.00),
-('Helmet', 0.00, 2.00, 6.00);
+## 🔧 Running the tests <a name = "tests"></a>
 
+Explain how to run the automated tests for this system.
 
-Project Structure
+### Break down into end to end tests
 
-material_finder/
-├── backend/
-│   ├── app/
-│   │   ├── __init__.py
-│   │   ├── models.py
-│   │   ├── routes.py
-│   ├── config.py
-│   ├── run.py
-│   └── requirements.txt
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ObjectList.js
-│   │   │   ├── ObjectDetails.js
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── App.css
-│   ├── package.json
-│   └── package-lock.json
-├── README.md
-└── .gitignore
+Explain what these tests test and why
 
+```
+Give an example
+```
 
-API Endpoints
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## 🎈 Usage <a name="usage"></a>
+
+Add notes about how to use the system.
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+Add additional notes about how to deploy this on a live system.
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [MongoDB](https://www.mongodb.com/) - Database
+- [Express](https://expressjs.com/) - Server Framework
+- [VueJs](https://vuejs.org/) - Web Framework
+- [NodeJs](https://nodejs.org/en/) - Server Environment
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+
+See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
+
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- References

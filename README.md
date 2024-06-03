@@ -36,7 +36,7 @@ Material Finder is a full-stack application that allows users to find suitable m
     ```
 
 3. Configure the database:
-    Ensure MAMP is running and MySQL server is started. Update `app.py` with your database credentials if necessary.
+    Ensure MAMP is running and MySQL server is started. Update `__init__.py` with your database credentials if necessary.
 
 4. Initialize the database:
     ```bash

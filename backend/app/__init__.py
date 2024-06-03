@@ -8,8 +8,8 @@ CORS(app)
 
 # Database configuration
 app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'admin'
-app.config['MYSQL_PASSWORD'] = 'charu2001'
+app.config['MYSQL_USER'] = 'user'
+app.config['MYSQL_PASSWORD'] = 'password'
 app.config['MYSQL_DB'] = 'materials_objects_db'
 app.config['MYSQL_PORT'] = 8889
 

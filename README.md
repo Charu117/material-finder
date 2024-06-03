@@ -1,65 +1,70 @@
-Material Finder
-- Overview
+# Material Finder
+
+## Overview
 Material Finder is a full-stack application that allows users to find suitable materials for different objects based on specified properties such as transparency, density, and stiffness. The application consists of a backend implemented with Flask and a frontend built with React.
 
-Features
-Backend API to manage materials and objects
-Retrieve materials that satisfy certain parameters
-Frontend GUI to interact with the backend
-List of objects and their material requirements
-Display suitable materials for a selected object
+## Features
+- Backend API to manage materials and objects
+- Retrieve materials that satisfy certain parameters
+- Frontend GUI to interact with the backend
+- List of objects and their material requirements
+- Display suitable materials for a selected object
 
-- Technologies Used
-Backend: Flask, PyMySQL
-Frontend: React, Axios
-Database: MySQL
-Other: MAMP for local MySQL server management
+## Technologies Used
+- Backend: Flask, PyMySQL
+- Frontend: React, Axios
+- Database: MySQL
+- Other: MAMP for local MySQL server management
 
+## Setup and Installation
 
-Setup and Installation
-Prerequisites
+### Prerequisites
+- Python 3.x
+- Node.js and npm
+- MAMP (or any local MySQL server)
 
-Python 3.x
-Node.js and npm
-MAMP (or any local MySQL server)
-Backend Setup
+### Backend Setup
+1. Create a virtual environment:
+    ```bash
+    python -m venv venv
+    source venv/bin/activate
+    ```
 
-python -m venv venv
-source venv/bin/activate  
+2. Install the dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-Install the dependencies:
+3. Configure the database:
+    Ensure MAMP is running and MySQL server is started. Update `app.py` with your database credentials if necessary.
 
-pip install -r requirements.txt
+4. Initialize the database:
+    ```bash
+    python3 run.py
+    ```
 
-Configure the database:
+### Frontend Setup
+1. Navigate to the frontend directory:
+    ```bash
+    cd ../frontend
+    ```
 
-Ensure MAMP is running and MySQL server is started. Update app.py with your database credentials if necessary.
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-Initialize the database:
+3. Start the React development server:
+    ```bash
+    npm start
+    ```
 
-
-Run the Flask server:
-
-python3 run.py
-
-Frontend Setup
-Navigate to the frontend directory:
-
-cd ../frontend
-Install the dependencies:
-
-npm install
-
-Start the React development server:
-
-npm start
-
-Database Initialization
+### Database Initialization
 Populate the database:
 
 Use a MySQL client or command-line tool to insert the provided data into the Materials and Objects tables.
 
-sql
+```sql
 INSERT INTO Materials (name, transparency, density, stiffness) VALUES
 ('Wood', 0.10, 0.60, 1.00),
 ('Metal', 0.00, 7.80, 8.00),
@@ -80,7 +85,11 @@ INSERT INTO Objects (name, min_transparency, max_density, min_stiffness) VALUES
 ('Helmet', 0.00, 2.00, 6.00);
 
 
-Project Structure
+
+API Endpoints
+GET /api/objects: Retrieve the list of all objects' names.
+GET /api/objects/<name>: Retrieve the properties required by an object, given its name.
+GET /api/materials: Retrieve the list of materials that satisfy the given parameters.
 
 material_finder/
 ├── backend/
@@ -104,6 +113,3 @@ material_finder/
 │   └── package-lock.json
 ├── README.md
 └── .gitignore
-
-
-API Endpoints
